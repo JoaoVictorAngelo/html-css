@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição dos fundos</title>
+    <style>
+        div.container {
+            display: flex; /* Isso cria um contêiner flexível */
+            flex-wrap: wrap; /* Isso permite que as divs sejam distribuídas em várias linhas */
+            justify-content: center; /* Isso centraliza as divs horizontalmente */
+        }
+
+            div.bloco {
+            background-image: url(./imagens/wallpaper003.jpg); /*Definindo fundo div */
+            width: calc(32.33% - 10px); /* Defina a largura das divs para ocupar 1/3 do espaço disponível (com uma margem entre elas) */
+            height: 200px; /* Defina a altura das divs conforme necessário */
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        /* Primeira linha do bloco  */
+        div#q1 {
+            background-position: left top;
+        }
+        div#q2 {
+            background-position: center top;
+        }
+        div#q3 {
+            background-position: right top;
+        }
+
+        /* Segunda linha do bloco  */
+
+        div#q4 {
+            background-position: center left;
+        }
+        div#q5 {
+            background-position: center center;
+        }
+        div#q6 {
+            background-position: center right;
+        }
+
+        /* Terceira linha do bloco  */        
+        div#q7 {
+            background-position: bottom left;
+        }
+        div#q8 {
+            background-position: bottom center;
+        }
+        div#q9 {
+            background-position: bottom right;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Divs da primeira linha -->
+        <div class="bloco" id="q1">
+        </div>
+        <div class="bloco" id="q2">
+        </div>
+        <div class="bloco" id="q3">
+        </div>
+
+        <!-- Divs da segunda linha -->
+        <div class="bloco" id="q4">
+        </div>
+        <div class="bloco" id="q5">
+        </div>
+        <div class="bloco" id="q6">
+        </div>
+
+        <!-- Divs da terceira linha -->
+        <div class="bloco" id="q7">
+        </div>
+        <div class="bloco" id="q8">
+        </div>
+        <div class="bloco" id="q9">
+        </div>
+
+    </div>
+
+</body>
+</html>
