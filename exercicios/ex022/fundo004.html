@@ -5,17 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posicionamento</title>
     <style>
-        body {
+        .mascote-container {
+            position: relative;
             height: 98vh;
             border: 1px dashed black;
+        }
+
+        .mascote {
+            position: absolute;
             background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
             background-size: 100px;
             background-repeat: no-repeat;
-            background-position: center center;
+            width: 100px;
+            height: 100px;
+        }
+
+        #mascote1 {
+            top: 0;
+            left: 0;
+        }
+
+        #mascote2 {
+            top: 0;
+            right: 0;
+        }
+
+        #mascote3 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #mascote4 {
+            bottom: 0;
+            left: 0;
+        }
+
+        #mascote5 {
+            bottom: 0;
+            right: 0;
         }
     </style>
 </head>
 <body>
-    
+    <div class="mascote-container">
+        <div class="mascote" id="mascote1"></div>
+        <div class="mascote" id="mascote2"></div>
+        <div class="mascote" id="mascote3"></div>
+        <div class="mascote" id="mascote4"></div>
+        <div class="mascote" id="mascote5"></div>
+    </div>
 </body>
-</html>
+</html
