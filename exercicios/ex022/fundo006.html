@@ -6,17 +6,26 @@
     <title>Document</title>
     <style>
         body {
-            height: 100vh;
+            height: 100vh; /* Define a altura do elemento como 100% da altura da janela de visualização (viewport height) */ 
             background-color: black; /* Colocando cor de fundo*/
-            background-image: url('../ex022/imagens/wallpaper002.jpg'); /* colocando imagem de fundo*/
+            background-image: url('/exercicios/ex022/imagens/wallpaper002.jpg'); /* colocando imagem de fundo*/
             background-repeat: no-repeat; /* definindo que nao se repita a imagem */
             background-position: center center; /* Centraliza a imagem de fundo */
             background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
+            background-attachment: fixed; /* Fixa a imagem de fundo, mantendo-a estática mesmo quando a página é rolada
+            */
+            
+            
+            /* shorthand  
+                        color > image > position > repeat > [size]
+            background: black url('imagens/wallpaper002.jpg') center center  cover / no-repeat  fixed;
+            */
+
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: 0 auto;
             border: 1px solid darkblue;
@@ -27,7 +36,7 @@
 <body>
     <main>
         <h1>Texte de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate iste illo ipsam consequatur molestias deserunt. Hic eos magnam ut at inventore adipisci odit illo! Dolore nulla autem voluptas cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi aperiam, officia quibusdam commodi cupiditate facilis tempora porro itaque id, saepe quia alias velit dolore autem veritatis inventore doloremque possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, maiores ipsum? Maiores quia hic doloribus nobis illum dolores quisquam rerum sapiente, commodi, in deserunt mollitia vero incidunt voluptatem nemo eveniet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate iste illo ipsam consequatur molestias deserunt. Hic eos magnam ut at inventore adipisci odit illo! Dolore nulla autem voluptas cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi aperiam, officia quibusdam commodi cupiditate facilis tempora porro itaque id, saepe quia alias velit dolore autem veritatis inventore doloremque possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, maiores ipsum? Maiores quia hic doloribus nobis illum dolores quisquam rerum sapiente, commodi, in deserunt mollitia vero incidunt voluptatem nemo eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate iste illo ipsam consequatur molestias deserunt. Hic eos magnam ut at inventore adipisci odit illo! Dolore nulla autem voluptas cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi aperiam, officia quibusdam commodi cupiditate facilis tempora porro itaque id, saepe quia alias velit dolore autem veritatis inventore doloremque possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, maiores ipsum? Maiores quia hic doloribus nobis illum dolores quisquam rerum sapiente, commodi, in deserunt mollitia vero incidunt voluptatem nemo eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate iste illo ipsam consequatur molestias deserunt. Hic eos magnam ut at inventore adipisci odit illo! Dolore nulla autem voluptas cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi aperiam, officia quibusdam commodi cupiditate facilis tempora porro itaque id, saepe quia alias velit dolore autem veritatis inventore doloremque possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, maiores ipsum? Maiores quia hic doloribus nobis illum dolores quisquam rerum sapiente, commodi, in deserunt mollitia vero incidunt voluptatem nemo eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate iste illo ipsam consequatur molestias deserunt. Hic eos magnam ut at inventore adipisci odit illo! Dolore nulla autem voluptas cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi aperiam, officia quibusdam commodi cupiditate facilis tempora porro itaque id, saepe quia alias velit dolore autem veritatis inventore doloremque possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, maiores ipsum? Maiores quia hic doloribus nobis illum dolores quisquam rerum sapiente, commodi, in deserunt mollitia vero incidunt voluptatem nemo eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate iste illo ipsam consequatur molestias deserunt. Hic eos magnam ut at inventore adipisci odit illo! Dolore nulla autem voluptas cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto modi aperiam, officia quibusdam commodi cupiditate facilis tempora porro itaque id, saepe quia alias velit dolore autem veritatis inventore doloremque possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, maiores ipsum? Maiores quia hic doloribus nobis illum dolores quisquam rerum sapiente, commodi, in deserunt mollitia vero incidunt voluptatem nemo eveniet.</p>
     </main>
 </body>
 </html>
